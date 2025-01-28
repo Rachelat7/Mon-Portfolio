@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website </title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel ="stylesheet" href="styles/style.css">
+
+    </head>
+    <body>
+        <button id="mode-toggle"> <i class="fas fa-moon"></i>Changer de mode</button>
+        <div id="header">
+            <img src='images/logo.png' alt="logo" class="logo" class="logo">
+            <div class="container">
+                 <nav class="navbar">
+                    <div class="navbar-links">
+                        <ul>
+                            <li><a href="#header">Introduction</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Technical Skills</a></li>
+                            <li><a href="#myWork">My Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <button class="hamburger" id="hamburger">&#9776;</button>
+                    <ul class="menu-mobile" id="menu-mobile">
+                        <li><a href="#header">Introduction</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Technical Skills</a></li>
+                        <li><a href="#myWork">My Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1 class="big-title">HI, I'M RACHEL</h1>
+                    <p class="sup-title">Welcome To My Portfolio </p>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------about-------------------->
+        <div id="about">
+            <div class="container">
+                <div class= "row">
+                    <div class="about-col-1"><img src="images/avatar2.jpg" alt="avatar"></div>   
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me:</h1>
+                        <p  id="pre">Jeune etudiante de 19ans en deuxième année de licence informatique à Sorbonne Univeristé, je
+                            suis à la recherche d’un stage de minimum 3 mois à partir
+                            de mars 2025 en informatique.</p>
+                        <div class="tab_titles">
+                            <p class="tab-links active-link" onclick="opentab('Formation')">Formation</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="Formation">
+                            <ul>
+                                <li><span>Sorbonne Univeristé:en cours</span><br>Licence 2 informatique- DANT(Développeur d'Applications Nouvelle Technologies).</li>
+                                <li><span>Sorbonne Université: 2023-2024</span><br>Licence 1 Science Formelles(informatique).</li>
+                                <li><span>Lycée Mostafa Ben Boulaid: 2022-2023</span><br>Baccalauréat spécialité Mathématiques. </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="Experience">
+                            <ul>
+                                <li><span>09/2024 -11/2024</span><br>Vendeuse Dans Une Boulengerie. </li>
+                                <li><span>04/2024 -08/2024</span><br>Employé d'attraction. </li>
+                                <li><span>09/2023 -02/2024</span><br>Baby-sitter et professeur particulier.</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Skills">
+                            <ul>
+                                <li>Esprit d'equipe</li>
+                                <li>Créativité </li>
+                                <li>Autonomie </li>
+                                <li>Gestion du stresse</li>
+                                <li>Adaptabilité et flexibilité</li>
+                                <li>Gestion du temps</li>
+                                <li>Curiosité et apprentissage continu</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------------------services----------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Technical Skills</h1>
+                <div class="services-list">
+                    <div>   
+                        <h2><i class="fas fa-laptop-code"></i>Développoment Web</h2>
+                        <p>/Html /Css /BOOTSTRAP /JAVASCRIPT</p>
+                        <a href="https://www.comprendre-informatique.com/html-css-et-javascript-les-fondamentaux-des-langages-web-front-end/" target="_blank">learn more</a>
+                    </div>
+                    <div>   
+                        <h2><i class="fas fa-cogs"></i>Langages Programmation orientée Objet(POO)</h2>
+                        <p>C'est est un paradigme de programmation qui organise le code autour de la notion d'objets : JAVA/ PYTHON </p>
+                        <a href="https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet" target="_blank">learn more</a>
+                    </div>
+                    <div>   
+                        <h2><i class="fas fa-code"></i> Langage Programmation impérative</h2>
+                        <p>Consiste à décrire un programme comme une suite d’instructions qui modifient des variables pour atteindre un résultat : C </p>
+                        <a href="https://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative" target="_blank">learn more</a>
+                    </div>
+                    <div>   
+                        <h2><i class="fas fa-brain"></i> Programmation fonctionnelle</h2>
+                        <p>C'est un paradigme où les programmes sont construits à partir de fonctions pures : OCAML </p>
+                        <a href="https://fr.wikipedia.org/wiki/Programmation_fonctionnelle" target="_blank">learn more</a>
+                    </div>
+                    <div>   
+                        <h2><i class="fas fa-tools"></i>Outils</h2>
+                        <p>
+                            <i class="fab fa-github"></i> Github /
+                            <i class="fab fa-visual-studio-code"></i>VS Code /
+                            <i class="fas fa-terminal"></i>Jupyter Notebook /
+                        <a href="https://fr.wikipedia.org/wiki/Visual_Studio_Code" target="_blank">learn more</a>
+                    </div>
+                    <div> 
+                        <h2><i class="fas fa-language"></i>Langues</h2>
+                        <p>  /Français(Billingue) /Anglais(avancée) /Tamazight(langue maternelle) /Arabe</p>
+                        <a href="https://fr.wikipedia.org/wiki/Langues_berb%C3%A8res" target="_blank">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------work---------->
+
+        <div id="myWork">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/C.jpeg" alt="Image de projet Ecosystème">
+                        <div class="layer">
+                            <h3>Projet Ecosystème</h3>
+                            <p>Simulation d'un écosystème mettant en scène des interactions entre proies et prédateurs</p>
+                            <a href="https://github.com/Rachelat7/Projet-ecosystme24" target="_blank">Lien</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/math.png">
+                        <div class="layer">
+                            <h3>Projet Automates Mathématique discrètes</h3>
+                            <p>Conception, analyse et manipulation des automates ainsi que l'étude de la théorie des langages</p>
+                            <a href="https://github.com/Rachelat7/Projet-Automates" target="_blank">Lien</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/lotusrr.jpg">
+                        <div class="layer">
+                            <h3>Exploration de la Nyctinastie chez le Lotus Sacré en Atelier de recherche encadrée Dynamique </h3>
+                            <p>Développement d'une platforme pour analyser la nyctinastie ,avec collecte de données, analyse et création de 4 modules prédictifs</p>
+                            <a href="https://github.com/are-dynamic-2024-g4/nyctinastie-lotus" target="_blank">Link</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/projetchute.jpg" alt="Image de Projet Numerique">
+                        <div class="layer">
+                            <h3>Projet Numérique: La chute de Baumgartner en Mécanique Physique</h3>
+                            <p>Simuler et analyser la chute libre de Felix Baumgartner, reprouduire les données expérimentales et explorer les dynamiques de la chute</p>
+                            <a href="https://github.com/Rachelat7/projet_numerique-chute_libre" target="_blank">Lien</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+<!---------contact -------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">
+                            Contact Me</h1>
+                            <div id="email-section">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                               <a href="aittalebrachel@gmail.com" target="_blank">aittalebrachel@gmail.com</a>
+                          </div>
+                        
+                        <p><i class="fas fa-phone-alt" id="phone"></i>
+                            07-66-39-87-75</p>
+                        <div class="sociam-icons">
+                            <a href=""></a>
+                        </div>
+                        <a  href="images/CV Rachel-Ait -Taleb (4).pdf"  download class="btn btn2" target="_blank">Download CV</a>
+                    </div>
+                    <div class="contact-left" id="monFormulaire">
+                        <form id="contactForm">
+                            <input type="text" name="Name" placeholder="Your Name" required pattern="[A-Za-z\s]+" title="Veuillez entrer un nom valide" id="name">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <p id="confirmationMessage" style="display: none; color: green;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="scriptes/script.js"></script>
+
+    </body>
+    
+    <footer id="footer">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#header">Introduction</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Technical Skills</a></li>
+                <li><a href="#myWork">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <p>Retrouve-moi sur :</p>
+            <div class="social-icons">
+                <a href="https://github.com/Rachelat7" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rachel-ait-taleb-895680335/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/rila_komi" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+
+            <p>&copy; 2024 Rachel Ait Taleb. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+</html>
